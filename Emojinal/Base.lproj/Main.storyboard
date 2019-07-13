@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRw-d4-b7G">
+                                <rect key="frame" x="117.5" y="109" width="140" height="166"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="129"/>
+                                <state key="normal" title="😃"/>
+                                <connections>
+                                    <action selector="happyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfR-2y-Rj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zad-fC-vUe">
+                                <rect key="frame" x="116" y="356" width="143" height="166"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="129"/>
+                                <state key="normal" title="🥺"/>
+                                <connections>
+                                    <action selector="sadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cD-Ow-m7H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emojional Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-3G-J4A">
+                                <rect key="frame" x="86.5" y="64" width="202" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="30"/>
+                                <color key="textColor" red="0.082276932895183563" green="0.32541066408157349" blue="0.36917299032211304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="happy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvV-Fa-ffX">
+                                <rect key="frame" x="132" y="276" width="111" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" red="0.082276932895183563" green="0.32541066408157349" blue="0.36917299032211304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sad..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7j-3t-MMs">
+                                <rect key="frame" x="136" y="530" width="102" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" red="0.082276932895183563" green="0.32541066408157349" blue="0.36917299032211304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96858876943588257" green="0.89162379503250122" blue="0.88877648115158081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zad-fC-vUe" secondAttribute="trailing" constant="116" id="6is-1L-ATw"/>
+                            <constraint firstItem="Zad-fC-vUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="7Td-G9-4oK"/>
+                            <constraint firstItem="j7j-3t-MMs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="Gfg-o5-Zja"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RvV-Fa-ffX" secondAttribute="trailing" constant="132" id="Nmz-Tr-9MT"/>
+                            <constraint firstItem="Zad-fC-vUe" firstAttribute="top" secondItem="RvV-Fa-ffX" secondAttribute="bottom" constant="56.5" id="Urd-7a-jFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j7j-3t-MMs" secondAttribute="trailing" constant="137" id="X8c-dE-ExS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KRw-d4-b7G" secondAttribute="trailing" constant="117.5" id="ZmM-iA-Inj"/>
+                            <constraint firstItem="KRw-d4-b7G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117.5" id="c28-r4-Kqu"/>
+                            <constraint firstItem="TBb-3G-J4A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="mNd-Zh-4iW"/>
+                            <constraint firstItem="RvV-Fa-ffX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="nF5-7F-OCy"/>
+                            <constraint firstItem="RvV-Fa-ffX" firstAttribute="top" secondItem="KRw-d4-b7G" secondAttribute="bottom" constant="1" id="noO-C3-usV"/>
+                            <constraint firstItem="j7j-3t-MMs" firstAttribute="top" secondItem="Zad-fC-vUe" secondAttribute="bottom" constant="8" id="pWE-ND-i7H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBb-3G-J4A" secondAttribute="trailing" constant="86.5" id="pxK-V2-lvD"/>
+                            <constraint firstItem="KRw-d4-b7G" firstAttribute="top" secondItem="TBb-3G-J4A" secondAttribute="bottom" constant="4" id="vcP-TR-uCb"/>
+                            <constraint firstItem="KRw-d4-b7G" firstAttribute="top" secondItem="TBb-3G-J4A" secondAttribute="bottom" constant="4" id="yfl-DO-Lh4"/>
+                            <constraint firstItem="TBb-3G-J4A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86.5" id="z4T-Li-5Qm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
